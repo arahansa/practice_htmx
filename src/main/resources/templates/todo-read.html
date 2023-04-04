@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="form" th:fragment="todo">
+    이름 : <span th:text="${form.name}"></span> <br />
+    나이 : <span th:text="${form.age}"></span>
+    <button hx-get="/form"  hx-target="#form">폼 전환</button>
+</div>
+
+</body>
+</html>
